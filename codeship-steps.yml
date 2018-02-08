@@ -2,3 +2,5 @@
   tag: master
   service: vacols
   command: echo hello
+  registry: https://index.docker.io/v1/
+  encrypted_dockercfg_path: dockercfg.encrypted
