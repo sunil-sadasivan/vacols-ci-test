@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  vacols:
+    build: .
+    ports:
+      - "1521:1521"
