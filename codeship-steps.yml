@@ -7,6 +7,6 @@
 - name: setup
   tag: master
   service: vacols
-  command: source /home/oracle/.bashrc; sqlplus sys/Oradoc_db1 as SYSDBA @/ORCL/setup_vacols.sql
+  command: bin/bash -c "source /home/oracle/.bashrc; sqlplus sys/Oradoc_db1 as SYSDBA @/ORCL/setup_vacols.sql"
   registry: https://index.docker.io/v1/
   encrypted_dockercfg_path: dockercfg.encrypted
