@@ -10,3 +10,9 @@
   command: ps aux
   registry: https://index.docker.io/v1/
   encrypted_dockercfg_path: dockercfg.encrypted
+- name: setup
+  tag: master
+  service: vacols
+  command: bin/bash -c "source /home/oracle/.bashrc; sqlplus sys/Oradoc_db1 as SYSDBA @/ORCL/setup_vacols.sql"
+  registry: https://index.docker.io/v1/
+  encrypted_dockercfg_path: dockercfg.encrypted
